@@ -1,4 +1,5 @@
 # COVID19-Kaggle
+This repo stores codes and analysis on Kaggle's COVID-19 challenges. 
 
 ## Contributors
 - Ivan Cui (Data Scientist II @ Bayer)
