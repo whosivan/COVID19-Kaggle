@@ -1,12 +1,16 @@
-(1) Metadata for papers from these sources are combined: CZI, PMC, BioRxiv/MedRxiv. (total records 29500) </br>
+1.  Metadata for papers from these sources are combined: CZI, PMC, BioRxiv/MedRxiv. (total records 29500) </p>
 	- CZI 1236 records
 	- PMC 27337
 	- bioRxiv 566
 	- medRxiv 361
-(2) 17K of the paper records have PDFs and the hash of the PDFs are in 'sha' </br>
-(3) For PMC sourced papers, one paper's metadata can be associated with one or more PDFs/shas under that paper - a PDF/sha correponding to the main article, and possibly additional PDF/shas corresponding to supporting materials for the article.</br>
-(4) 13K of the PDFs were processed with fulltext ('has_full_text'=True)</br>
-(5) Various 'keys' are populated with the metadata:</br>
+
+2. 17K of the paper records have PDFs and the hash of the PDFs are in 'sha' </br>
+
+3. For PMC sourced papers, one paper's metadata can be associated with one or more PDFs/shas under that paper - a PDF/sha correponding to the main article, and possibly additional PDF/shas corresponding to supporting materials for the article.</br>
+
+4. 13K of the PDFs were processed with fulltext ('has_full_text'=True)</br>
+
+5. Various 'keys' are populated with the metadata:</br>
 	- 'pmcid': populated for all PMC paper records (27337 non null)
 	- 'doi': populated for all BioRxiv/MedRxiv paper records and most of the other records (26357 non null)
 	- 'WHO #Covidence': populated for all CZI records and none of the other records (1236 non null)
@@ -15,7 +19,7 @@
 
 
 
-
+---
 ### 2020-03-20
 ---CHANGES---
 * normalized doi, authors, title, abstract strings
@@ -24,15 +28,15 @@
 * added column in metadata file "full_text_file" to signal the tar.gz file in which the full text json resides
 
 ---SUMMARY---
-total metadata rows: 44220
-custom_license: 16959 full text (new: 15533)
-noncomm_use_subset: 2353 full text (new: 385)
-comm_use_subset: 9118 full text (new: 128)
-biorxiv_medrxiv: 885 full text (new: 110)
+- total metadata rows: 44220
+- custom_license: 16959 full text (new: 15533)
+- noncomm_use_subset: 2353 full text (new: 385)
+- comm_use_subset: 9118 full text (new: 128)
+- biorxiv_medrxiv: 885 full text (new: 110)
 
 
 
-
+---
 ### 2020-03-27
 ---CHANGES---
 * added column "cord_uid" (this persistent identifier is a 8-char alphanumeric string unique to each entry)
@@ -42,14 +46,14 @@ biorxiv_medrxiv: 885 full text (new: 110)
 * removed some entries that correspond to indices or table of contents
 
 ---SUMMARY---
-total metadata rows: 45774
-biorxiv_medrxiv: 1053 full text (new: 194, removed: 26)
-comm_use_subset: 9315 full text (new: 210, removed: 13)
-custom_license: 20657 full text (new: 4218, removed: 520)
-noncomm_use_subset: 2350 full text (new: 6, removed: 9)
+- total metadata rows: 45774
+- biorxiv_medrxiv: 1053 full text (new: 194, removed: 26)
+- comm_use_subset: 9315 full text (new: 210, removed: 13)
+- custom_license: 20657 full text (new: 4218, removed: 520)
+- noncomm_use_subset: 2350 full text (new: 6, removed: 9)
 
 
-
+---
 ### 2020-04-03
 ---CHANGES---
 * added PMC XML parses; available under metadata file column "has_pmc_xml_parse"
@@ -78,7 +82,7 @@ noncomm_use_subset:
   PMC - 2093 full text (new: 2093, removed: 0)
 
 
-
+---
 ### 2020-04-10
 ---CHANGES---
 * minor change to metadata deduplication logic
@@ -100,7 +104,7 @@ noncomm_use_subset:
   PMC - 2217 full text (new: 128, removed: 4)
 
 
-
+---
 ### 2020-04-17
 ---CHANGES---
 * no changes
@@ -122,7 +126,7 @@ noncomm_use_subset:
   PMC - 2212 full text (new: 22, removed: 27)
 
 
-
+---
 ### 2020-04-24
 ---CHANGES---
 * no changes
@@ -143,7 +147,7 @@ noncomm_use_subset:
   PDF - 2518 full text (new: 68, removed: 16)
   PMC - 2258 full text (new: 56, removed: 10)
 
-
+---
 ### 2020-05-01
 ---CHANGES---
 * added arXiv as a source of papers
@@ -169,7 +173,7 @@ noncomm_use_subset:
 
 
 
-
+---
 ### 2020-05-12
 ---CHANGES---
 
@@ -207,7 +211,7 @@ Full text:
   PDF - 51882 json (new: 4950, removed: 1492)
   PMC - 33503 json (new: 13989, removed: 3337)
 
-
+---
 ### 2020-05-19
 ---CHANGES---
 
