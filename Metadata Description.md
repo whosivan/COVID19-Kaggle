@@ -1,12 +1,12 @@
-(1) Metadata for papers from these sources are combined: CZI, PMC, BioRxiv/MedRxiv. (total records 29500)
+(1) Metadata for papers from these sources are combined: CZI, PMC, BioRxiv/MedRxiv. (total records 29500) </br>
 	- CZI 1236 records
 	- PMC 27337
 	- bioRxiv 566
 	- medRxiv 361
-(2) 17K of the paper records have PDFs and the hash of the PDFs are in 'sha'
-(3) For PMC sourced papers, one paper's metadata can be associated with one or more PDFs/shas under that paper - a PDF/sha correponding to the main article, and possibly additional PDF/shas corresponding to supporting materials for the article.
-(4)	13K of the PDFs were processed with fulltext ('has_full_text'=True)
-(5) Various 'keys' are populated with the metadata:
+(2) 17K of the paper records have PDFs and the hash of the PDFs are in 'sha' </br>
+(3) For PMC sourced papers, one paper's metadata can be associated with one or more PDFs/shas under that paper - a PDF/sha correponding to the main article, and possibly additional PDF/shas corresponding to supporting materials for the article.</br>
+(4) 13K of the PDFs were processed with fulltext ('has_full_text'=True)</br>
+(5) Various 'keys' are populated with the metadata:</br>
 	- 'pmcid': populated for all PMC paper records (27337 non null)
 	- 'doi': populated for all BioRxiv/MedRxiv paper records and most of the other records (26357 non null)
 	- 'WHO #Covidence': populated for all CZI records and none of the other records (1236 non null)
@@ -22,6 +22,7 @@
 * merged redundant rows in metadata file on doi, pmcid, and pubmed_id
 * metadata sha column can now include multiple files (some PMC files have multiple associated PDFs)
 * added column in metadata file "full_text_file" to signal the tar.gz file in which the full text json resides
+
 ---SUMMARY---
 total metadata rows: 44220
 custom_license: 16959 full text (new: 15533)
