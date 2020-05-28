@@ -10,8 +10,8 @@ This repo stores codes and analysis on Kaggle's COVID-19 challenges.
 
 ## Dataset
 ### Source
-- Project 1: https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge
-- Project 2: https://www.kaggle.com/praveengovi/coronahack-chest-xraydataset
+- Project 1: https://www.kaggle.com/praveengovi/coronahack-chest-xraydataset
+- Project 2: https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge
 
 ### Dataset Description
 - **Project 1:** </br>
